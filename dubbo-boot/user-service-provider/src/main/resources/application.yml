@@ -1,0 +1,25 @@
+server:
+  port: 9000
+
+dubbo:
+  # 应用名称
+  application:
+    name: user-service-provider
+    qos-port: 33333
+  # 注册中心
+  registry:
+    address: 121.43.63.185:2181
+    protocol: zookeeper
+  # 通信协议和接口
+  protocol:
+    name: dubbo
+    port: 20880
+  #连接监控中心
+  monitor:
+    protocol: registry
+  # 元数据
+  metadata-report:
+    address: zookeeper://121.43.63.185:2181
+
+#  scan:
+#    base-packages: com.ma.service

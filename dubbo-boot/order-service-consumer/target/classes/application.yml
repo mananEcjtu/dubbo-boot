@@ -1,0 +1,17 @@
+server:
+  port: 8000
+
+dubbo:
+  # 应用名称
+  application:
+    name: order-service-consumer
+    qos-port: 44444
+  # 注册中心
+  registry:
+    address: 121.43.63.185:2181
+    protocol: zookeeper
+  #连接监控中心
+  monitor:
+    protocol: registry
+#  scan:
+#    base-packages: com.ma.service
